@@ -27,6 +27,9 @@ static vector_string	find_match(std::string arg) {
 
 std::string	select_response(std::string input) {
 	std::string ret;
+	static std::string linput;
+	if (input == linput)
+		return (ret = "J'aime pas trop me repeter.");
 	srand((unsigned) time(NULL));
 
 	int	selection = rand() % 3;
@@ -35,5 +38,6 @@ std::string	select_response(std::string input) {
 		ret = "Pardon, je suis pas sur d'avoir compris.\n";
 	else
 		ret = res[selection];
+	linput = input;
 	return(ret);
 }
