@@ -1,5 +1,5 @@
-#include <iostream>
-#include "../include/db.hpp"
+//#include <iostream>
+#include "db.hpp"
 
 int	main() {
 	std::string input;

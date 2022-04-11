@@ -3,22 +3,22 @@
  * @created  : 4/11/22.
  */
 
-#include "../include/db.hpp"
-#include <vector>
-#include <iostream>
+#include "db.hpp"
+//#include <vector>
+//#include <iostream>
 
 static void	copyi(std::string *src, vector_string &dst) {
-	for (int i = 0; i < 3; ++i) {
+	for (int i = 0; i < 3; ++i)
 		dst.push_back(src[i]);
-	}
 }
 
 static vector_string	find_match(std::string arg) {
 	vector_string	res;
+	size_t	n_msg = sizeof(messages)/sizeof(messages[0]);
 
-	for (size_t i = 0; i < n_size; ++i) {
-		if (std::string(msgs[i].input) == arg) {
-			copyi(msgs[i].response, res);
+	for (size_t i = 0; i < n_msg; ++i) {
+		if (std::string(messages[i].input) == arg) {
+			copyi(messages[i].response, res);
 			return(res);
 		}
 	}

@@ -17,7 +17,7 @@ typedef	struct {
 }	record;
 
 // A struct in array
-record msgs[] = {
+static record messages[] = {
 	{"Comment tu t'appeles ?", // input
 		{ // responses
 			"Je m'appelle chat-bot.", // [0]
@@ -74,8 +74,6 @@ record msgs[] = {
 		}
 	}
 };
-
-size_t	n_size = sizeof(msgs)/sizeof(msgs[0]);
 
 #define CHAT_BOT_DB_HPP
 
