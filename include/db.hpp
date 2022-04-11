@@ -8,7 +8,6 @@
 #include <iostream>
 #include <vector>
 
-typedef	std::vector<std::string>	vector_string;
 std::string	select_response(std::string input);
 
 typedef	struct {
@@ -18,7 +17,7 @@ typedef	struct {
 
 // A struct in array
 static record messages[] = {
-	{"COMMENT TU T'APPELES ?", // input
+	{"COMMENTTUT'APPELES?", // input
 		{ // responses
 			"Je m'appelle chat-bot.", // [0]
 			"Je suis chat-bot.", // [1]
@@ -42,7 +41,7 @@ static record messages[] = {
 		}
 	},
 
-	{"COMMENT VAS-TU ?",
+	{"COMMENTVAS-TU?",
 {
 		"Ca va bien !",
 		"Ca va bien et toi ?",
@@ -50,7 +49,7 @@ static record messages[] = {
 		}
 	},
 
-	{"QUI ES TU ?",
+	{"QUIESTU?",
 		{
 			"Je suis un chat-bot.",
 			"Je pense que tu sais bien qui je suis",
@@ -58,7 +57,7 @@ static record messages[] = {
 		}
 	},
 
-	{"ES TU INTELLIGENT ?",
+	{"ESTUINTELLIGENT?",
 		{
 			"Oui, biensur.",
 			"Qu'est ce que t'en penses ?",
@@ -66,7 +65,7 @@ static record messages[] = {
 		}
 	},
 
-	{"ES TU REEL ?",
+	{"ESTUREEL?",
 		{
 			"Est ce que c'est vraiment important ?",
 			"Tu veux dire quoi par ca ?",
