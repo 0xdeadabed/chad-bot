@@ -4,8 +4,6 @@
  */
 
 #include "db.hpp"
-//#include <vector>
-//#include <iostream>
 
 static void	copyi(std::string *src, vector_string &dst) {
 	for (int i = 0; i < 3; ++i)
@@ -25,7 +23,20 @@ static vector_string	find_match(std::string arg) {
 	return(res);
 }
 
+void	toUp(std::string &arg) {
+	int len = arg.size();
+	char b;
+
+	for (int i = 0; i < len; i++){
+		b = arg[i];
+		b = toupper(b);
+		arg[i] = b;
+	}
+}
+
+
 std::string	select_response(std::string input) {
+	toUp(input);
 	std::string ret;
 	static std::string linput;
 	if (input == linput)

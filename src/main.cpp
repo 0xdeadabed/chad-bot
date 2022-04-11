@@ -1,4 +1,4 @@
-//#include <iostream>
+
 #include "db.hpp"
 
 int	main() {
@@ -7,7 +7,11 @@ int	main() {
 	while (true) {
 		std::cout << "> ";
 		std::getline(std::cin, input);
-		if (input == "Au revoir" || input == "au revoir") {
+		if (input == "au revoir" || input == "ciao") {
+			if (input == "ciao") {
+				std::cout << "Ciao !" << std::endl;
+				break;
+			}
 			std::cout << "Au revoir !" << std::endl;
 			break;
 		}

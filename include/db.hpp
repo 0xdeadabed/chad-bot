@@ -18,7 +18,7 @@ typedef	struct {
 
 // A struct in array
 static record messages[] = {
-	{"Comment tu t'appeles ?", // input
+	{"COMMENT TU T'APPELES ?", // input
 		{ // responses
 			"Je m'appelle chat-bot.", // [0]
 			"Je suis chat-bot.", // [1]
@@ -26,7 +26,7 @@ static record messages[] = {
 		}
 	},
 
-	{"Hello",
+	{"HELLO",
 		{
 			"Hello !",
 			"Hey, comment ca va ?",
@@ -34,7 +34,7 @@ static record messages[] = {
 		}
 	},
 
-	{"Hey",
+	{"HEY",
 		{
 			"Hello !",
 			"Hey, comment ca va ?",
@@ -42,7 +42,7 @@ static record messages[] = {
 		}
 	},
 
-	{"Comment vas-tu ?",
+	{"COMMENT VAS-TU ?",
 {
 		"Ca va bien !",
 		"Ca va bien et toi ?",
@@ -50,7 +50,7 @@ static record messages[] = {
 		}
 	},
 
-	{"Qui es tu ?",
+	{"QUI ES TU ?",
 		{
 			"Je suis un chat-bot.",
 			"Je pense que tu sais bien qui je suis",
@@ -58,7 +58,7 @@ static record messages[] = {
 		}
 	},
 
-	{"Es tu intelligent ?",
+	{"ES TU INTELLIGENT ?",
 		{
 			"Oui, biensur.",
 			"Qu'est ce que t'en penses ?",
@@ -66,7 +66,7 @@ static record messages[] = {
 		}
 	},
 
-	{"Es tu reel ?",
+	{"ES TU REEL ?",
 		{
 			"Est ce que c'est vraiment important ?",
 			"Tu veux dire quoi par ca ?",
