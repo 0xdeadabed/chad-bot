@@ -10,14 +10,16 @@
 
 std::string	select_response(std::string input);
 
+const int	n_res = 3;
+
 typedef	struct {
 	std::string 	input;
-	std::string 	response[3];
+	std::string 	response[n_res];
 }	record;
 
 // A struct in array
 static record messages[] = {
-	{"COMMENTTUT'APPELES?", // input
+	{"COMMENT TU T'APPELES", // input
 		{ // responses
 			"Je m'appelle chat-bot.", // [0]
 			"Je suis chat-bot.", // [1]
@@ -41,7 +43,7 @@ static record messages[] = {
 		}
 	},
 
-	{"COMMENTVAS-TU?",
+	{"COMMENT VAS-TU",
 {
 		"Ca va bien !",
 		"Ca va bien et toi ?",
@@ -49,7 +51,7 @@ static record messages[] = {
 		}
 	},
 
-	{"QUIESTU?",
+	{"QUI ES TU",
 		{
 			"Je suis un chat-bot.",
 			"Je pense que tu sais bien qui je suis",
@@ -57,15 +59,15 @@ static record messages[] = {
 		}
 	},
 
-	{"ESTUINTELLIGENT?",
+	{"ES TU INTELLIGENT",
 		{
 			"Oui, biensur.",
 			"Qu'est ce que t'en penses ?",
-			"En fait, je suis tres intelligent."
+			"Tu veux qu'on actualise ?"
 		}
 	},
 
-	{"ESTUREEL?",
+	{"ES TU REEL",
 		{
 			"Est ce que c'est vraiment important ?",
 			"Tu veux dire quoi par ca ?",
